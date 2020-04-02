@@ -1,0 +1,24 @@
+{
+    "name": "OnAir",
+    "version": "1.0",
+    "description": "This Extension lights up the OnAir sign when having a Google Meet",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "icons": {
+        "48": "images/logo48.png"
+    },
+    "browser_action": {
+        "defaul_icon": {
+            "48": "images/logo48.png"
+        },
+        "default_title": "OnAir"
+    }
+}
