@@ -13,7 +13,7 @@ boolean up = true;
 void setup() {
   delay(300);
   FastLED.addLeds<WS2812B, 1, GRB>(led, 1);
-  led[0] = CRGB::Green;
+  led[0] = CRGB::Yellow;
   FastLED.setBrightness(0x18);
   FastLED.show();
   Serial.begin(115200);
