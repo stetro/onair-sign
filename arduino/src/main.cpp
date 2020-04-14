@@ -13,8 +13,8 @@ boolean up = true;
 void setup() {
   delay(300);
   FastLED.addLeds<WS2812B, 1, GRB>(led, 1);
-  led[0] = CRGB::Yellow;
-  FastLED.setBrightness(0x18);
+  led[0] = CRGB::Red;
+  FastLED.setBrightness(MAX_BRIGHTNESS);
   FastLED.show();
   Serial.begin(115200);
   Serial.println();
@@ -28,6 +28,8 @@ void setup() {
     Serial.print(".");
   }
   Serial.println();
+  led[0] = CRGB::Yellow;
+  FastLED.show();
 
   Serial.print("Connected, IP address: ");
   Serial.println(WiFi.localIP());
