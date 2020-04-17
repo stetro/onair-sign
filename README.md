@@ -8,6 +8,8 @@ Put it above your home-office door or next to your working place to signal your 
 
 ![Extension](extension.png)
 
+It even detects if you mute yourself or turn off your camera.
+
 ### Hardware Setup
 
 * ESP8266 
@@ -22,6 +24,4 @@ Put it above your home-office door or next to your working place to signal your 
 2. Change the ESP's IP Address in background.js
 3. Load unpacked Extension (https://developer.chrome.com/extensions/getstarted#manifest)
 
-### Future plans
 
-* detect video enabled/disabled
