@@ -32,7 +32,7 @@ let sendState = debounce(function () {
         .join('&');
     fetch("http://" + displayIp + '/status?' + query).catch(deviceIsNotConnected);
     console.log(JSON.stringify(lastState) + " published")
-}, 1000, true);
+}, 200, false);
 
 let updateBadge = function () {
     if (lastState.noSession) {
@@ -42,7 +42,7 @@ let updateBadge = function () {
         let video = lastState.video ? '📷' : '🚫';
         chrome.browserAction.setBadgeText({ text: audio + video });
         if (!lastState.audio && !lastState.video) {
-            chrome.browserAction.setBadgeBackgroundColor({ color: 'yellow' });
+            chrome.browserAction.setBadgeBackgroundColor({ color: 'blue' });
         } else {
             chrome.browserAction.setBadgeBackgroundColor({ color: 'red' });
         }

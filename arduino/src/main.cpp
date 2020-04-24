@@ -56,7 +56,7 @@ void setup() {
     if (noSession) {
       led[0] = CRGB::Green;
     } else if (!video && !audio) {
-      led[0] = CRGB::Yellow;
+      led[0] = CRGB::Blue;
     } else {
       led[0] = CRGB::Red;
     }
